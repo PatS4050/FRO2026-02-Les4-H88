@@ -24,10 +24,13 @@ body {
     font-weight: 400;
 }
 
+* {
+    padding: 9px;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
-
 
 
 /*////////////////////////
@@ -35,8 +38,38 @@ body {
 ////////////////////////*/
 
 
-
-
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+/* Alles wat men buiten de media query specificeert, geldt dan voor mobiele apparaten */
+p {
+    font-size: 12px;
+}
+
+.background {
+    background-color: var(--peach);
+}
+
+/* Minimaal 768px betekend regels die gelden voor tablets */
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+
+    .background {
+        background-color: var(--tangerine);
+    }
+
+    /* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
+    @media screen and (min-width: 992px) {
+        p {
+            font-size: 16px;
+        }
+
+        .background {
+            background-color: var(--burnt-peach);
+        }
+    }
+    img {
+        width: 100%;
+    }

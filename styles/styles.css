@@ -12,11 +12,11 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 :root {
-    --peach: F9C48B;
-    --tangerine: F69051;
-    --burnt-peach: F26D40;
-    --mahogany: 260803;
-    --seashell: FDEFEC;
+    --peach: #F9C48B;
+    --tangerine: #F69051;
+    --burnt-peach: #F26D40;
+    --mahogany: #260803;
+    --seashell: #FDEFEC;
 }
 
 body {
@@ -24,10 +24,12 @@ body {
     font-weight: 400;
 }
 
-* {
-    padding: 9px;
-}
 
+section {
+    background-color: var(--seashell);
+    margin: 3px 9px;
+
+}
 /*////////////////////////
     2. Typography
 ////////////////////////*/
@@ -45,8 +47,7 @@ body {
 p {
     font-size: 12px;
 }
-
-.background {
+body {
     background-color: var(--peach);
 }
 
@@ -56,9 +57,10 @@ p {
         font-size: 14px;
     }
 
-    .background {
+    body {
         background-color: var(--tangerine);
-    }
+    }}
+
 
     /* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
     @media screen and (min-width: 992px) {
@@ -66,7 +68,7 @@ p {
             font-size: 16px;
         }
 
-        .background {
+        body {
             background-color: var(--burnt-peach);
         }
     }

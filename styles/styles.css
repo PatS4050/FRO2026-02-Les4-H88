@@ -11,6 +11,13 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+:root {
+    --peach: F9C48B;
+    --tangerine: F69051;
+    --burnt-peach: F26D40;
+    --mahogany: 260803;
+    --seashell: FDEFEC;
+}
 
 body {
     font-family: 'Dosis', sans-serif;
